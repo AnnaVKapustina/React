@@ -1,0 +1,87 @@
+.Name {
+  color: black;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: url(./img/2.jpg) no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.input {
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+.input:focus {
+  outline: none;
+}
+.input::placeholder {
+  opacity: 0.5;
+}
+:focus::placeholder {
+  color: transparent;
+}
+.input_name {
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.input_name {
+  outline: none;
+}
+.input_name::placeholder {
+  opacity: 0.5;
+}
+.input_btn {
+  padding: 5px 8px;
+  background-color: lightskyblue;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 50%;
+}
+.input_btn:hover {
+  opacity: 0.8;
+}
