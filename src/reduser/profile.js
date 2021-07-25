@@ -6,12 +6,12 @@ const initialState = {
     age: 27
 }
 
-export default function reduser (state = initialState, action) {
+export default function reduser(state = initialState, action) {
     switch (action.type) {
         case CHANGE_NAME: {
             return {
                 ...state,
-                name: action.payload.name   
+                name: action.payload.name
             }
         }
         case TOGGLE_SHOW_NAME: {
@@ -21,6 +21,6 @@ export default function reduser (state = initialState, action) {
             }
         }
         default:
-            return state     
+            return state
     }
 }
